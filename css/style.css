@@ -1,4 +1,6 @@
 :root {
+    --ms-header-height: 70px;
+    --ms-sidebar-width: 70px;
     --ms-white-col: #ffffff;
     --ms-main-header-bg-col: #3870e0;
     --ms-main-bg-col: #f8f9fa;
@@ -20,7 +22,7 @@ img {
     width: 100%;
     height: 100vh;
     /* debug */
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 /* DEBUG */
@@ -32,13 +34,42 @@ img {
 
 /* HEADER */
 .ms_header {
-    height: 70px;
+    height: var(--ms-header-height);
     background-color: var(--ms-white-col);
     /* debug */
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 
 /* MAIN */
+.ms_main {
+    width: 100%;
+    height: calc(100% - (var(--ms-header-height)));
+    /* debug */
+    /* border: 1px solid lightblue; */
+}
+
+.ms_sidebar {
+    height: 100%;
+    width: var(--ms-sidebar-width);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #0c1d32;
+    background-size: cover;
+    background-position: bottom;
+}
+
+@media screen and (min-width: 992px) {
+    :root {
+        --ms-sidebar-width: 120px; 
+    }
+}
+
+.ms_main-window {
+    width: calc(100% - (var(--ms-sidebar-width)));
+    height: 100%;
+    /* debug */
+    border: 1px solid lightcoral;
+}
+
 
 
 /* FOOTER */
