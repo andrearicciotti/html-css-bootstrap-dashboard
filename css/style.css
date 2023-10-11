@@ -1,0 +1,46 @@
+:root {
+    --ms-white-col: #ffffff;
+    --ms-main-header-bg-col: #3870e0;
+    --ms-main-bg-col: #f8f9fa;
+    --ms-main-coltitle-bg-col: #f7f7f7;
+    --ms-classicon-bg-col: #e16e59;
+    --ms-btn-done-bg-col: #408558;
+    --ms-btn-process-bg-col: #f5c344;
+    --ms-btn-failed-bg-col: #cb444a;
+    --ms-input-searchbar-bg-col: #e5e5e5;
+    --ms-text-white-col: #ffffff;
+}
+
+/* COMMON */
+img {
+    max-width: 100%;
+}
+
+.ms_container {
+    width: 100%;
+    height: 100vh;
+    /* debug */
+    background-color: antiquewhite;
+}
+
+/* DEBUG */
+
+
+
+/* UTILITIES */
+
+
+/* HEADER */
+.ms_header {
+    height: 70px;
+    background-color: var(--ms-white-col);
+    /* debug */
+    border: 1px solid grey;
+}
+
+/* MAIN */
+
+
+/* FOOTER */
+
+
