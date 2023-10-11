@@ -1,6 +1,6 @@
 :root {
     --ms-header-height: 70px;
-    --ms-sidebar-width: 70px;
+    --ms-sidebar-width: 90px;
     --ms-white-col: #ffffff;
     --ms-main-header-bg-col: #3870e0;
     --ms-main-bg-col: #f8f9fa;
@@ -43,6 +43,15 @@ img {
     /* border: 1px solid grey; */
 }
 
+.ms_searchbar #search, .ms_searchbar .input-group-text{
+    background-color: var(--ms-input-searchbar-bg-col) !important;
+    border-left: none;
+}
+
+.ms_actions .fa-bell {
+    color: gold;
+}
+
 /* MAIN */
 /* MAIN HEADER */
 .ms_main {
@@ -63,7 +72,7 @@ img {
 
 @media screen and (min-width: 992px) {
     :root {
-        --ms-sidebar-width: 120px; 
+        --ms-sidebar-width: 160px; 
     }
 }
 
