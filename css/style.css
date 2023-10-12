@@ -4,6 +4,7 @@
     --ms-white-col: #ffffff;
     --ms-sidebar-bg-col: #0c1d32;
     --ms-main-header-bg-col: #3870e0;
+    --ms-main-header-plans-bg-col: #2c5ab4;
     --ms-main-bg-col: #f8f9fa;
     --ms-main-coltitle-bg-col: #f7f7f7;
     --ms-classicon-bg-col: #e16e59;
@@ -41,7 +42,9 @@ img {
 
 
 /* UTILITIES */
-
+.fs-7 {
+    font-size: 0.65rem !important;
+}
 
 /* HEADER */
 .ms_header {
@@ -90,6 +93,12 @@ img {
     color: var(--ms-text-white-col);
 }
 
+.ms_plans-btns {
+    border-radius: 20px;
+    background-color: var(--ms-main-header-plans-bg-col) !important;
+    padding: .1rem .4rem;
+}
+
 
 /* CLASSES TABLE SECTION*/
 .ms_table {
@@ -101,3 +110,4 @@ img {
 
 
 /* FOOTER */
+
