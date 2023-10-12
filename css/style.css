@@ -35,8 +35,8 @@ img {
 
 /* DEBUG */
 [class*="col-"] {
-    border: 1px solid blue;
-    min-height: 100px;
+    /* border: 1px solid blue; */
+    /* min-height: 100px; */
 }
 
 
@@ -75,6 +75,7 @@ img {
     background-color: var(--ms-sidebar-bg-col);
     background-size: cover;
     background-position: bottom;
+    color: var(--ms-text-white-col);
 }
 
 .ms_main-window {
