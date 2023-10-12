@@ -18,42 +18,56 @@
 
 <body>
 
-    <div class="ms_container">
+    <!-- web-app -->
+    <div class="ms_container vh-100 w-100">
 
         <!-- header -->
         <header class="ms_header">
 
+            <!-- navigation -->
             <nav class="container-fluid h-100 d-flex justify-content-between align-items-center">
 
+                <!-- logos -->
                 <div class="ms_header-logos h-75 d-flex">
 
-                    <img src="img/mobile-logo.png" class="h-100 ratio-1x1 me-3 d-lg-none" alt="">
+                    <a href=""><img src="img/mobile-logo.png" class="h-100 ratio-1x1 me-3 d-lg-none" alt=""></a>
 
-                    <img src="img/logo.svg" class="h-75 d-none d-lg-inline-block align-self-center" alt="">
+                    <a href=""><img src="img/logo.svg" class="h-100 d-none d-lg-inline-block align-self-center"
+                            alt=""></a>
 
                 </div>
+                <!-- /logos -->
 
+                <!-- searchbar -->
                 <div class="input-group flex-nowrap flex-grow-1 ms_searchbar p-3">
 
-                    <label for="search" class="input-group-text" id="addon-wrapping"><i
+                    <label for="search" role="button" class="input-group-text" id="addon-wrapping"><i
                             class="fa-solid fa-magnifying-glass"></i></label>
 
-                    <input type="text" id="search" class="form-control"
+                    <input type="search" id="search" class="form-control"
                         placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
                         aria-describedby="addon-wrapping">
 
                 </div>
+                <!-- /searchbar -->
 
+                <!-- action buttons -->
                 <div class="ms_actions h-50 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <ul class="d-flex list-unstyled btn-group" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-light d-none d-lg-inline-block bg-white border-0"><i class="fa-solid fa-list-ul"></i></button>
-                        <button type="button" class="btn btn-light d-none d-lg-inline-block bg-white border-0"><i class="fa-solid fa-circle-question"></i></button>
-                        <button type="button" class="btn btn-light d-none d-lg-inline-block bg-white border-0"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                        <button type="button" class="btn btn-light bg-white border-0"><i class="fa-solid fa-bell"></i></button>
+                        <li><button type="button" class="btn btn-light d-none d-lg-inline-block bg-white border-0"><i
+                                    class="fa-solid fa-list-ul"></i></button></li>
+                        <li><button type="button" class="btn btn-light d-none d-lg-inline-block bg-white border-0"><i
+                                    class="fa-solid fa-circle-question"></i></button></li>
+                        <li><button type="button" class="btn btn-light d-none d-lg-inline-block bg-white border-0"><i
+                                    class="fa-solid fa-ellipsis-vertical"></i></button></li>
+                        <li><button type="button" class="btn btn-light bg-white border-0"><i
+                                    class="fa-solid fa-bell"></i></button></li>
                     </ul>
                 </div>
+                <!-- /action buttons -->
 
             </nav>
+            <!-- /navigation -->
 
         </header>
         <!-- /header -->
@@ -61,100 +75,145 @@
         <!-- main -->
         <main class="d-flex ms_main">
 
-            <section class="ms_sidebar">
+            <!-- sidebar navigation -->
+            <section class="ms_sidebar h-100 oveflow-hidden">
 
             </section>
+            <!-- sidebar navigation -->
 
-            <section class="ms_main-window overflow-auto">
+            <!-- main window -->
+            <section class="ms_main-window h-100 overflow-auto">
 
-                <div class="container-fluid">
+                <!-- main window header -->
+                <header class="container-fluid ms_main-window-header">
 
-                    <div class="row g-3">
+                    <div class="row">
 
-                        <!-- main window header -->
-                        <div class="col-12 ms_main-window-header">
+                        <div class="col-12 col-md-4 col-lg-3 order-md-3 pe-">
 
-                            <div class="row">
-                                <div class="col-12 col-md-4 col-lg-3 order-md-3"><span>Nuovo Studente</span></div>
-                                <div class="col-12 col-md-4 col-lg-5 order-md-1">
-                                    <h2>Boolean</h2>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-4 order-md-2"><span>Studenti online negli ultimi 30
-                                        minuti</span><span class="d-block">125</span></div>
-                            </div>
+                            <span>Nuovo Studente</span>
 
                         </div>
-                        <!-- /main window header -->
 
-                        <!-- next classes table -->
-                        <div class="col-12 col-lg-8 order-lg-1 ms_classes-table">
+                        <div class="col-12 col-md-4 col-lg-5 order-md-1">
 
-                            <div class="card">
-
-                                <div class="card-header">
-                                    <h2>Prossime classi</h2>
-                                </div>
-
-                                <div class="table ms_table"></div>
-
-                            </div>
+                            <h2>Boolean</h2>
 
                         </div>
-                        <!-- /next classes table-->
 
-                        <!-- F.A.Q. -->
-                        <div class="col-12 col-lg-8 order-lg-3">
+                        <div class="col-12 col-md-4 col-lg-4 order-md-2">
 
-                            <div class="card">
+                            <span>Studenti online negli ultimi 30
+                                minuti</span>
 
-                                <div class="card-header">
-                                    <h2>F.A.Q.</h2>
-                                </div>
-
-                            </div>
+                            <span class="d-block">125</span>
 
                         </div>
-                        <!-- /F.A.Q. -->
-
-                        <!-- to do list -->
-                        <div class="col-12 col-lg-4 order-lg-2">
-
-                            <div class="card">
-
-                                <div class="card-header">
-                                    <h2>Todo</h2>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- /to do list -->
-
-                        <!-- graph -->
-                        <div class="col-12 col-lg-4 order-lg-4">
-
-                            <div class="card">
-
-                                <img src="img/stats.jpeg" alt="stats image">
-
-                            </div>
-
-                        </div>
-                        <!-- /graph -->
 
                     </div>
 
-                </div>
+                </header>
+                <!-- /main window header -->
+
+                <!-- main window contents -->
+                <main class="container-fluid py-3">
+
+                    <div class="row g-3">
+
+                        <!-- table and F.A.Q. -->
+                        <div class="col-12 col-lg-8">
+
+                            <div class="row g-3">
+
+                                <!-- table -->
+                                <div class="col-12">
+
+                                    <div class="card">
+
+                                        <div class="card-header">
+                                            <h2>Prossime classi</h2>
+                                        </div>
+
+                                        <div class="table ms_table"></div>
+
+                                    </div>
+
+                                </div>
+                                <!-- /table -->
+
+                                <!-- F.A.Q. -->
+                                <div class="col-12">
+
+                                    <div class="card">
+
+                                        <div class="card-header">
+                                            <h2>F.A.Q.</h2>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- /F.A.Q. -->
+
+                            </div>
+
+                        </div>
+                        <!-- /table and F.A.Q. -->
+
+                        <!-- todo and graph -->
+                        <div class="col-12 col-lg-4">
+
+                            <div class="row g-3">
+
+                                <!-- todo -->
+                                <div class="col-12">
+
+                                    <div class="card">
+
+                                        <div class="card-header">
+                                            <h2>Todo</h2>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- /todo -->
+
+                                <!-- graph -->
+                                <div class="col-12">
+
+                                    <div class="card">
+
+                                        <img src="img/stats.jpeg" alt="stats image">
+
+                                    </div>
+
+                                </div>
+                                <!-- /graph -->
+
+                            </div>
+
+                        </div>
+                        <!-- /todo and graph -->
+
+                    </div>
+
+                </main>
+                <!-- /main window contents -->
 
             </section>
+            <!-- /main window -->
 
         </main>
         <!-- /main -->
 
-
-
     </div>
+    <!-- /web-app -->
 
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
