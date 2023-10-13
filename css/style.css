@@ -43,7 +43,7 @@ img {
 
 /* UTILITIES */
 .fs-7 {
-    font-size: 0.65rem !important;
+    font-size: 0.70rem !important;
 }
 
 /* HEADER */
@@ -103,10 +103,33 @@ img {
 /* CLASSES TABLE SECTION*/
 .ms_table {
     /* debug */
-    min-height: 100px;
-    border: 1px solid green;
+    /* min-height: 100px;
+    border: 1px solid green; */
 }
 
+.ms_btn-done {
+    border-radius: 20px;
+    background-color: green !important;
+    padding: .1rem .4rem;
+}
+
+.ms_btn-process {
+    border-radius: 20px;
+    background-color: yellow !important;
+    padding: .1rem .4rem;
+}
+
+.ms_btn-failed {
+    border-radius: 20px;
+    background-color: red !important;
+    padding: .1rem .4rem;
+}
+
+.ms_btn-class {
+    border-radius: 20px;
+    background-color: orangered !important;
+    padding: .2rem .3rem;
+}
 
 
 /* FOOTER */
