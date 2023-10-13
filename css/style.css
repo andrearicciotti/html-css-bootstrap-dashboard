@@ -132,5 +132,11 @@ img {
 }
 
 
+/* STATS BLOCK */
+.card > * {
+    border: 1px solid lightgrey;
+}
+
+
 /* FOOTER */
 
